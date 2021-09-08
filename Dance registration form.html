@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration form</title>
+	<style type="text/css">
+		table, th, td{ border: 1px solid black; }
+		h1{ background-color: #5c5c8a; color: white; padding: 40px; }
+		body{ background-color: #ffffe6; }
+		th,td{ padding: 10px; }
+	</style>
+</head>
+<body>
+<h1><strong>Registration form: Dance Club</strong></h1>
+<hr>
+<form>
+	<table width="40%">
+		<tr>
+			<th>Name:</th>
+			<td><input type="text" name="Name" placeholder="Enter your name" size="30" required></td>
+		</tr>
+		<tr>
+			<th>IC No:</th>
+			<td><input type="text" name="IC1" size="5" placeholder="--  --  --  --"> - <input type="text" name="IC2" size="2" placeholder="--  --  --"> - <input type="text" name="IC3" size="3" placeholder=" --  --  --  --"></td>
+		</tr>
+		<tr>
+			<th>Address:</th>
+			<td><textarea placeholder="Write address here" rows="6" cols="70"></textarea></td>
+		</tr>
+		<tr>
+			<th>Gender:</th>
+			<td><input type="radio" name="Gender">Male  <input type="radio" name="Gender">Female</td>
+		</tr>
+		<tr>
+			<th>Dance Type:</th>
+			<td><input type="checkbox" name="Type">Zapin <input type="checkbox" name="Type">Joget <input type="checkbox" name="Type">Inang <input type="checkbox" name="Type">Lion Dance</td>
+		</tr>
+		<tr>
+			<th>Competation:</th>
+			<td>
+				<select name="Competation" multiple>
+				<option>State level</option>
+				<option>National level</option>
+				<option>International level</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>Nationality:</th>
+			<td>
+				<input list="Nationality" placeholder="Please select" autofocus>
+				<datalist id="Nationality">
+					<option value="Argentina">
+					<option value="China">
+					<option value="France">
+					<option value="India">
+					<option value="US">
+				</datalist>
+			</td>
+		</tr>
+		<tr>
+			<th>Password:</th>
+			<td><input type="password" name="Password" placeholder="Enter your password" required></td>
+		</tr>
+	</table>
+	<br>
+	<input type="submit" name="Register" value="Register Me">
+	<button>Cancel</button>
+</form>
+</body>
+</html>
