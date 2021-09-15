@@ -1,0 +1,107 @@
+.back-top{
+	background-color: #121b21;
+	height: 15vh;
+}
+
+.back-main{
+	background-color: #090e11;
+	height: 85vh;
+}
+
+.back-container{
+	position: relative;
+}
+
+.front-container{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+
+}
+
+.front-container1{
+	position: absolute;
+	left: 0;
+	top: 20px;
+	right: 0;
+}
+
+.chat-top{
+ background-color: #365163;
+	min-height: 50px;
+	
+}
+
+.profile-image{
+	height: 30px;
+	width: 30px;
+	margin-top: 8px;
+}
+
+.contacts{
+background-color: #1b2831;
+min-height: 600px;
+}
+
+.contact-table-scroll{
+	overflow-y: scroll;
+	height: 650px;
+	color: #cedbe4;
+}
+
+.message-area{
+background-color:#dee6ed ;
+height: 650px;
+}
+
+.message-table-scroll{
+	overflow-y:scroll;
+	height: 580px;
+   }
+   
+   .message-box{
+	background-color:#365163 ;
+   }
+   body,html {
+	margin: 0;
+	height: 100%;
+	width: auto;
+	background-color: black; 
+  }
+
+
+  @media screen and (max-width: 576px)
+  {
+	  #c1{
+		  display: none;
+	  }
+  }
+
+  .block {
+	display:inline-block;
+	width: 100%;
+	border: none;
+	padding: 4px;
+	font-size: 16px;
+  }
+  .block:hover{
+	  background-color: initial;
+  }
+
+  #rcorners3 {
+	  margin-left: 60px;
+
+	border-radius: 100%;
+	background-image: url('images/me2.jpg');
+	background-size: 100% 100%;
+	padding: 20px; 
+	width: 200px;
+	height: 200px;  
+  }
+
+  #c1
+  {
+	background-image: url('images/b.png');
+	background-size: 100% 100%;
+  }

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- My style -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="design.css">
+    <title>Whatsapp</title>
+   
+  </head>
+  <body>
+  	<div class="back-container">
+  	<div class="container-fluid front-container">
+ 	<div class="back-top"></div>
+ 	<div class="back-main"></div>
+	  </div>
+	 <div class="container front-container1">
+		<div class=" row chat-top">
+
+	   <div class="col-sm-12">
+		   <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" color="#cedbe4" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg></a>
+		   <span class="ml-2 color text-white"><b>Profile</b></span>
+
+	   </div>
+		</div>
+
+	<div class="row">
+		<div class="col-sm-12 message-area">
+            <br>
+			<div class="message-table-scroll">
+                <p id="rcorners3"></p>
+                <button class="btn btn" style="background-color: initial; margin-left: 130px;" id="k" onclick="myFunction()"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                  </svg></button>	
+                <br>
+                <br>
+                <br>
+                <br>
+                <table class="table table-dark table-hover">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" style="color: lightgreen;">Your Name</td>
+                        </tr>
+                        <tr>
+                            <td>Sachin A R Bhat</td>
+                            <td style="text-align: right ; color:#cedbe4 ;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                              </svg></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="color: #cedbe4;">This is not your username or pin. This name will be visible to your Whatsapp contact</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="color: lightgreen;">About</td>
+                        </tr>
+                        <tr>
+                            <td>Available</td>
+                            <td style="text-align: right;color: #cedbe4;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                              </svg></td>
+                        </tr>
+                        </tbody>
+                </table>
+			</div>
+
+
+        </div>
+	
+	</div>
+
+	</div>	
+
+  	</div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myFile");
+        document.getElementById("k").innerHTML="<input type='file'>";
+        }
+</script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
